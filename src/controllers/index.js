@@ -1,1 +1,1 @@
-export * as moviesController from './movies.controller'
+export * as moviesController from './movies.controller.js'

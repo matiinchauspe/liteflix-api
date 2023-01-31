@@ -2,9 +2,9 @@
 import express from 'express'
 import cors from 'cors'
 // Internal imports
-import { Logs } from './utils'
-import { moviesRouter } from './v1/routes'
-import { dbInit } from './db/init'
+import { Logs } from './src/utils/index.js'
+import { moviesRouter } from './src/v1/routes/index.js'
+import { dbInit } from './src/db/init.js'
 
 const app = express()
 const PORT = process.env.PORT || 3000

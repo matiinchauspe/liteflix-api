@@ -1,11 +1,12 @@
 // External imports
 import { v4 as uuid } from 'uuid'
 // Internal imports
-import { Movie } from '../models'
-import { Logs } from '../utils'
+import { Movie } from '../models/index.js'
+import { Logs } from '../utils/index.js'
 
 export const getAllMovies = async () => {
   const movies = await Movie.find({})
+  Logs.dbLog('Movies from the server listed 😃')
 
   return movies
 }

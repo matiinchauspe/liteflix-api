@@ -2,5 +2,5 @@
   "watch": ["src"],
   "ext": "js,json",
   "ignore": ["src/**/*.spec.js"],
-  "exec": "DEBUG=app:* NODE_OPTIONS='--es-module-specifier-resolution=node' node ./src/index.js"
+  "exec": "DEBUG=app:* node ./index.js"
 }

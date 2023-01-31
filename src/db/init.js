@@ -1,6 +1,6 @@
 import { connect } from 'mongoose'
 
-import { config } from '../config'
+import { config } from '../config/index.js'
 
 const { dbHost: DB_HOST, dbName: DB_NAME } = config
 const USER = encodeURIComponent(config.dbUser)

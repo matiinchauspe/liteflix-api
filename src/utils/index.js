@@ -1,1 +1,1 @@
-export * as Logs from './logs'
+export * as Logs from './logs.js'

@@ -22,6 +22,14 @@ const movieSchema = new Schema({
   }
 })
 
+movieSchema.set('toJSON', {
+  transform: (_, returnedObject) => {
+    returnedObject.id = returnedObject._id.toString()
+    delete returnedObject._id
+    delete returnedObject.__v
+  }
+})
+
 const Movie = model('Movie', movieSchema)
 
 export { Movie }
